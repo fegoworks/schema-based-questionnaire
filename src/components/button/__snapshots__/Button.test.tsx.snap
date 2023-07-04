@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component - Button > should render button component 1`] = `
+<div>
+  <button
+    type="button"
+  >
+    Click Me!
+  </button>
+</div>
+`;
