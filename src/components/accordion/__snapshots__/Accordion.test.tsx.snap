@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component - Accordion > should render accordion component 1`] = `
+<div>
+  <div
+    class="Accordion"
+  >
+    <div
+      class="accordion-item"
+    >
+      <div
+        class="accordion-item-header "
+      >
+        <span>
+          Accordion Title
+        </span>
+        <span>
+          Accordion Answer
+        </span>
+        <span
+          class="status "
+        />
+      </div>
+    </div>
+    <div
+      class="accordion-body "
+    >
+      <div>
+        Accordion content
+      </div>
+    </div>
+  </div>
+</div>
+`;
