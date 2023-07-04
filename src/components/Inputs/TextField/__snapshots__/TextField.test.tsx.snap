@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component - TextField > should render TextField component 1`] = `
+<div>
+  <div
+    class="TextField"
+  >
+    <input
+      id="FirstName"
+      name="FirstName"
+      role="textbox"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
