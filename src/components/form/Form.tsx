@@ -54,7 +54,7 @@ export const Form: FunctionComponent<FormProps> = ({
   const dispatch = useDispatch();
   const { values, errors, getFieldProps, resetForm, touched } =
     useFormikContext<FormConfig>();
-
+  
   return (
     <form className="Form">
       {config.map(({ label, name, type, parent, ...props }, index) => {
@@ -81,6 +81,7 @@ export const Form: FunctionComponent<FormProps> = ({
                 <FormField
                   key={name}
                   type={type}
+                  placeholder={props.placeholder}
                   {...getFieldProps(name)}
                   error={errors[name as keyof {}]}
                   touched={touched[name as keyof {}]}

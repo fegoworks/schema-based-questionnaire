@@ -2,7 +2,6 @@ import { FieldProps } from "../../formField";
 import "./textField.scss";
 import { FunctionComponent } from "react";
 
-
 const TextField: FunctionComponent<FieldProps> = ({
   error,
   name,
@@ -11,7 +10,8 @@ const TextField: FunctionComponent<FieldProps> = ({
   touched,
   type = "text",
   value,
-  disabled
+  disabled,
+  placeholder,
 }) => {
   return (
     <div className="TextField">
@@ -24,6 +24,7 @@ const TextField: FunctionComponent<FieldProps> = ({
         type={type}
         value={value}
         disabled={disabled}
+        placeholder={placeholder}
       />
       {error && touched && <p className="error">{error}</p>}
     </div>

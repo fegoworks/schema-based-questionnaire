@@ -12,6 +12,7 @@ const Checkbox: FunctionComponent<FieldProps> = ({
   touched,
   options,
   disabled,
+  value,
 }) => {
   return (
     <div className="Checkbox" role="checkbox">
@@ -24,8 +25,9 @@ const Checkbox: FunctionComponent<FieldProps> = ({
             name={name}
             value={option.value}
             disabled={disabled}
+            checked={value?.includes(option.value as string)}
           />
-          <span>{option.label}</span>
+          <span className={disabled ? "disabled" : ""}>{option.label}</span>
         </label>
       ))}
       {error && touched && <p className="error">{error}</p>}

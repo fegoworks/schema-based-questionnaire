@@ -1,5 +1,5 @@
 import { fireEvent, render } from "@testing-library/react";
-import { describe, expect } from "vitest";
+import { describe, expect, vi } from "vitest";
 import Checkbox from "./Checkbox";
 
 const opt = [
@@ -14,20 +14,32 @@ const defaultProps = {
 };
 
 describe("Component - Checkbox", () => {
+  let onChange: () => void;
+
+  beforeEach(() => {
+    onChange = vi.fn();
+  });
+
   it("should render checkbox component", () => {
-    const { container } = render(<Checkbox {...defaultProps} />);
+    const { container } = render(
+      <Checkbox onChange={() => onChange} {...defaultProps} />
+    );
     expect(container).toMatchSnapshot();
   });
 
   it("should render a checkbox for each option", () => {
-    const { getByRole } = render(<Checkbox {...defaultProps} value="text" />);
+    const { getByRole } = render(
+      <Checkbox onChange={() => onChange} {...defaultProps} value="text" />
+    );
     expect(getByRole("checkbox", { name: "Check" })).toBeInTheDocument();
     expect(getByRole("checkbox", { name: "Select" })).toBeInTheDocument();
     expect(getByRole("checkbox", { name: "Text" })).toBeInTheDocument();
   });
 
   it("should render a checkbox for each option", () => {
-    const { getByRole } = render(<Checkbox {...defaultProps} />);
+    const { getByRole } = render(
+      <Checkbox onChange={() => onChange} {...defaultProps} />
+    );
     const TextOption = getByRole("checkbox", { name: "Check" });
 
     expect(TextOption).not.toBeChecked();
@@ -37,7 +49,12 @@ describe("Component - Checkbox", () => {
 
   it("should show an error message if validation is incorrect", () => {
     const { getByText } = render(
-      <Checkbox {...defaultProps} error={"Some error"} touched={true} />
+      <Checkbox
+        onChange={() => onChange}
+        {...defaultProps}
+        error={"Some error"}
+        touched={true}
+      />
     );
     expect(getByText("Some error")).toBeTruthy();
   });

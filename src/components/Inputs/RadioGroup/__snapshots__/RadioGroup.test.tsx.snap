@@ -12,7 +12,9 @@ exports[`Component - RadioGroup > should render RadioGroup component 1`] = `
         type="radio"
         value="bread"
       />
-      <span>
+      <span
+        class=""
+      >
         Bread
       </span>
     </label>
@@ -22,7 +24,9 @@ exports[`Component - RadioGroup > should render RadioGroup component 1`] = `
         type="radio"
         value="sandwich"
       />
-      <span>
+      <span
+        class=""
+      >
         Sandwich
       </span>
     </label>
@@ -32,7 +36,9 @@ exports[`Component - RadioGroup > should render RadioGroup component 1`] = `
         type="radio"
         value="pancakes"
       />
-      <span>
+      <span
+        class=""
+      >
         Pancakes
       </span>
     </label>

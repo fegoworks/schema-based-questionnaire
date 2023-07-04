@@ -10,6 +10,7 @@ const RadioGroup: FunctionComponent<FieldProps> = ({
   touched,
   options,
   disabled,
+  value,
 }) => {
   return (
     <div className="RadioGroup" role="group">
@@ -21,9 +22,10 @@ const RadioGroup: FunctionComponent<FieldProps> = ({
             type="radio"
             name={name}
             value={option.value}
+            checked={option.value === value}
             disabled={disabled}
           />
-          <span>{option.label}</span>
+          <span className={disabled ? "disabled" : ""}>{option.label}</span>
         </label>
       ))}
       {error && touched && <p className="error">{error}</p>}

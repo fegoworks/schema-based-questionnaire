@@ -19,11 +19,16 @@ const SelectField: FunctionComponent<FieldProps> = ({
         name={name}
         onBlur={onBlur}
         onChange={onChange}
-        value={value}
         disabled={disabled}>
-        <option value="">Select</option>
+        <option value="" disabled={disabled}>
+          Select
+        </option>
         {options?.map((option) => (
-          <option key={option.value} value={option.value}>
+          <option
+            key={option.value}
+            value={option.value}
+            selected={option.value === value}
+            disabled={disabled}>
             {option.label}
           </option>
         ))}

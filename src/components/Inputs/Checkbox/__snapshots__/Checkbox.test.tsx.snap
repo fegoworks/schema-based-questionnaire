@@ -12,7 +12,9 @@ exports[`Component - Checkbox > should render checkbox component 1`] = `
         type="checkbox"
         value="check"
       />
-      <span>
+      <span
+        class=""
+      >
         Check
       </span>
     </label>
@@ -22,7 +24,9 @@ exports[`Component - Checkbox > should render checkbox component 1`] = `
         type="checkbox"
         value="text"
       />
-      <span>
+      <span
+        class=""
+      >
         Text
       </span>
     </label>
@@ -32,7 +36,9 @@ exports[`Component - Checkbox > should render checkbox component 1`] = `
         type="checkbox"
         value="select"
       />
-      <span>
+      <span
+        class=""
+      >
         Select
       </span>
     </label>

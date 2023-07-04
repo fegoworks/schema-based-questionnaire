@@ -27,7 +27,7 @@ describe("Component - SelectField", () => {
 
   it("should render a SelectField with a dropdown of options", () => {
     const { container } = render(
-      <SelectField {...defaultProps} value="text" onChange={() => onChange} />
+      <SelectField {...defaultProps} onChange={() => onChange} />
     );
     const select = container.getElementsByTagName("select")[0];
     const options = select.getElementsByTagName("option");
