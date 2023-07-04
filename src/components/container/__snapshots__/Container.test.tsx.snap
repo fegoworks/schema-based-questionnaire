@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component - Container > renders Container component 1`] = `
+<div>
+  <div
+    class="Container "
+  >
+    <div>
+      Child Element
+    </div>
+  </div>
+</div>
+`;
