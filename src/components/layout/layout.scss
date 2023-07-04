@@ -1,0 +1,41 @@
+.Layout {
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.button-container {
+  margin-top: 1.5rem;
+}
+
+h1 {
+  color: #ccc;
+  cursor: pointer;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--app-bg);
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  padding: 2rem 0;
+  min-width: 600px;
+}
+
+@media (prefers-color-scheme: light) {
+  nav {
+    color: #666;
+  }
+}
+@media (max-width: 800px) {
+  .Layout {
+    padding: 1rem;
+    nav h1 {
+      font-size: xx-large;
+    }
+  }
+}

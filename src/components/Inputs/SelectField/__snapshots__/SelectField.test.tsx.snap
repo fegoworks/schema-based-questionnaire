@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component - SelectField > should render SelectField component 1`] = `
+<div>
+  <div
+    class="SelectField"
+  >
+    <select
+      id="types"
+      name="types"
+    >
+      <option
+        value=""
+      >
+        Select
+      </option>
+      <option
+        value="onions"
+      >
+        Onions
+      </option>
+      <option
+        value="veggies"
+      >
+        Veggies
+      </option>
+      <option
+        value="carrots"
+      >
+        Carrots
+      </option>
+    </select>
+  </div>
+</div>
+`;

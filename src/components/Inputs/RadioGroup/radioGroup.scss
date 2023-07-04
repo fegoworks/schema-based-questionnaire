@@ -1,0 +1,37 @@
+.RadioGroup {
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.RadioGroup label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.RadioGroup input[type="radio"] {
+  margin: 0.5rem 0;
+}
+
+.RadioGroup .error {
+  color: #d44;
+  margin: 0;
+}
+
+.RadioGroup input:focus-visible,
+.RadioGroup input:focus {
+  border-radius: 3px;
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-color: #ddd;
+}
+
+input[type="radio"] {
+  width: 2em;
+  height: 2rem;
+  accent-color: green;
+}

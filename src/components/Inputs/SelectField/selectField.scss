@@ -1,0 +1,30 @@
+.SelectField {
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+.SelectField select {
+  padding: 0.6em 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  transition: border-color 0.25s;
+}
+
+.SelectField option {
+  font-weight: 500;
+}
+
+.SelectField .error {
+  color: #d44;
+  margin: 0;
+}
+
+.SelectField select:focus-visible,
+.SelectField select:focus {
+  border-radius: 3px;
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-color: #ddd;
+}
+

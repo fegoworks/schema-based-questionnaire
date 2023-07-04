@@ -1,0 +1,26 @@
+.Checkbox {
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.Checkbox label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+
+  span {
+    margin-left: 0.5rem;
+  }
+}
+
+.Checkbox input[type="checkbox"] {
+  width: 2em;
+  height: 2rem;
+  accent-color: green;
+}
+
+.Checkbox .error {
+  color: #d44;
+  margin: 0;
+}

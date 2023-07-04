@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component - RadioGroup > should render RadioGroup component 1`] = `
+<div>
+  <div
+    class="RadioGroup"
+    role="group"
+  >
+    <label>
+      <input
+        name="breakfast"
+        type="radio"
+        value="bread"
+      />
+      <span>
+        Bread
+      </span>
+    </label>
+    <label>
+      <input
+        name="breakfast"
+        type="radio"
+        value="sandwich"
+      />
+      <span>
+        Sandwich
+      </span>
+    </label>
+    <label>
+      <input
+        name="breakfast"
+        type="radio"
+        value="pancakes"
+      />
+      <span>
+        Pancakes
+      </span>
+    </label>
+  </div>
+</div>
+`;

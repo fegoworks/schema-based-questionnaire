@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component - Checkbox > should render checkbox component 1`] = `
+<div>
+  <div
+    class="Checkbox"
+    role="checkbox"
+  >
+    <label>
+      <input
+        name="types"
+        type="checkbox"
+        value="check"
+      />
+      <span>
+        Check
+      </span>
+    </label>
+    <label>
+      <input
+        name="types"
+        type="checkbox"
+        value="text"
+      />
+      <span>
+        Text
+      </span>
+    </label>
+    <label>
+      <input
+        name="types"
+        type="checkbox"
+        value="select"
+      />
+      <span>
+        Select
+      </span>
+    </label>
+  </div>
+</div>
+`;
